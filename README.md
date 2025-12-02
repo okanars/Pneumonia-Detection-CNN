@@ -1,21 +1,21 @@
-# Pneumonia Detection from Chest X-Rays
+# Pneumonia Detection from Chest X-Rays 🩺🫁
 
 Lightweight README updated for Git workflows and safe dataset handling.
 
-## Quick summary
+## Badges
+[![Python](https://img.shields.io/badge/Python-3.x-blue)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)](https://www.tensorflow.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
+
+## Quick summary ✨
 A Convolutional Neural Network (CNN) for binary classification of chest X-rays: NORMAL vs PNEUMONIA. Built with TensorFlow / Keras.
 
-## Badges
-- Python 3.x
-- TensorFlow / Keras
-- MIT License
-
-## Dataset
+## Dataset ⚠️
 Source: Chest X-Ray Images (Pneumonia) — https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
 
-IMPORTANT: Do NOT commit the dataset to git. Add the dataset folder to .gitignore (example below).
+IMPORTANT: Do NOT commit the dataset to git. Add the dataset folder to .gitignore (example below). 🚫📦
 
-## Install (recommended)
+## Install (recommended) 🛠️
 On macOS (Python 3.8+ recommended):
 
 ```bash
@@ -30,7 +30,7 @@ If you don't have requirements.txt:
 pip install tensorflow pandas numpy matplotlib seaborn jupyterlab
 ```
 
-## Git usage / Setup
+## Git usage / Setup 🧰
 Clone (replace with your repo URL) or initialize locally:
 
 ```bash
@@ -44,7 +44,7 @@ git add .
 git commit -m "Initial commit"
 ```
 
-Add a .gitignore to prevent committing dataset and env files:
+Add a .gitignore to prevent committing dataset and env files (example) 📁:
 
 ```gitignore
 # .gitignore (example)
@@ -63,9 +63,13 @@ dataset/
 
 # Notebooks checkpoints
 .ipynb_checkpoints/
+# Models / weights
+models/
+*.h5
+*.ckpt
 ```
 
-## Dataset placement
+## Dataset placement 📂
 Create a local data folder (outside git) or add the dataset path in your config/notebook:
 
 ```
@@ -75,7 +79,7 @@ Create a local data folder (outside git) or add the dataset path in your config/
   test/
 ```
 
-## Run
+## Run ▶️
 Open the notebook or run training script:
 
 ```bash
@@ -86,18 +90,18 @@ jupyter lab
 python train.py --data-dir /path/to/local/data
 ```
 
-## Notes
+## Notes 📝
 - Use EarlyStopping and ReduceLROnPlateau callbacks for stable training.
 - Save model weights to a models/ directory (also add to .gitignore if desired).
 - Add evaluation metrics (accuracy, ROC, confusion matrix) to the repo as images or reports — these are safe to commit.
 
-## Contributing
+## Contributing 🤝
 1. Fork
 2. Create branch: git checkout -b feature/name
 3. Commit and push
 4. Open PR
 
-## License
+## License 📜
 MIT
 
 Developed by Okan Arslan
